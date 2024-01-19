@@ -27,8 +27,14 @@ void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
 
+/* Helper functions for counting_sort */
+int max_value(int *array, size_t size);
+void setup_count_array(int *count, int max);
+void cumulative_count(int *count, int max);
+void fill_output_array(int *array, int *output, int *count, size_t size);
+
 /* Helper function for quick_sort */
-void quick_sort_recursive(int *array, ssize_t low, ssize_t high, size_t size);
+void quick_sort_recursive(int *array, size_t low, size_t high, size_t size);
 
 #endif /* SORT_H */
 
