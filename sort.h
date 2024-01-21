@@ -33,7 +33,7 @@ void merge(int *array, int *left, size_t left_size, int *right, size_t right_siz
 void merge_sort_recursive(int *array, size_t size);
 
 /* Helper function for quick_sort */
-void quick_sort_recursive(int *array, size_t low, size_t high, size_t size);
+void quick_sort_recursive(int *array, ssize_t low, ssize_t high, size_t size);
 
 #endif /* SORT_H */
 
