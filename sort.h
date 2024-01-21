@@ -32,7 +32,9 @@ void heap_sort(int *array, size_t size);
 /* Helper functions for merge_sort */
 void merge(int *array, int *left, size_t left_size, int *right, size_t right_size);
 void merge_sort_recursive(int *array, size_t size);
-
+/* Helper functions for heap_sort */
+void sift_down(int *array, size_t size, size_t index, size_t max_size);
+void heapify(int *array, size_t size);
 /* Helper function for quick_sort */
 void quick_sort_recursive(int *array, ssize_t low, ssize_t high, size_t size);
 
