@@ -26,7 +26,11 @@ void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
 
+/* Helper functions for merge_sort */
+void merge(int *array, int *left, size_t left_size, int *right, size_t right_size);
+void merge_sort_recursive(int *array, size_t size);
 
 /* Helper function for quick_sort */
 void quick_sort_recursive(int *array, size_t low, size_t high, size_t size);
